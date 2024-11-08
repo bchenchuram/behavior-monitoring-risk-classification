@@ -1,11 +1,11 @@
-Behavior Monitoring and Risk Classification
-
-WHAT: Project Overview
-
+**Behavior Monitoring and Risk Classification
+**
+**WHAT: Project Overview
+**
 This project provides an automated machine learning solution for behavior monitoring and risk classification in financial transactions. It addresses the need for real-time fraud detection and risk management by classifying transactions based on learned behavior patterns. The solution allows financial institutions to proactively monitor transactions, detect anomalies, and reduce manual intervention in identifying suspicious activities.
 
-WHY: Problem Statement
-
+**WHY: Problem Statement
+**
 Financial institutions face increasing challenges in managing risks and complying with regulations. Traditional fraud detection is labor-intensive and reactive, leading to delays in identifying high-risk transactions. This project solves these issues by:
 	•	Automating Risk Classification: Classifying transactions in real-time based on behavior patterns.
 	•	Reducing Operational Costs: Minimizing the need for manual reviews.
@@ -13,8 +13,8 @@ Financial institutions face increasing challenges in managing risks and complyin
 
 This approach enables institutions to manage risks more efficiently, address fraud proactively, and improve the scalability of their operations.
 
-HOW: Solution Overview
-
+**HOW: Solution Overview
+**
 The solution consists of three primary stages:
 	1.	Data Preprocessing: Cleanses, transforms, and engineers new features from transactional data.
 	2.	Model Training: Uses machine learning algorithms to learn from historical data and classify transactions.
@@ -22,8 +22,8 @@ The solution consists of three primary stages:
 
 Below is a sequence diagram to illustrate the process flow.
 
-Sequence Diagram
-
+**Sequence Diagram
+**
               +-----------------------+
               |   Load Transaction    |
               |       Data            |
@@ -53,7 +53,7 @@ Sequence Diagram
 
 Each step in this diagram corresponds to stages in the main script (main.py), which processes, trains, and evaluates the data.
 
-Data
+**Data**
 
 	•	Dataset: A CSV file (transactions.csv) simulating transactional data, used to detect and classify risky behavior.
 	•	Data Columns:
@@ -65,8 +65,8 @@ Data
 	•	risk_label: Target label for risk (0 = low risk, 1 = high risk).
 
 
-Setup Instructions
-
+**Setup Instructions
+**
 	1.	Clone the Repository:
     git clone https://github.com/bchenchuram/behavior-monitoring-risk-classification.git
     cd behavior-monitoring-risk-classification
@@ -97,8 +97,8 @@ Results
 
     Model Performance:
 Accuracy: 0.92
-Classification Report:
-              precision    recall  f1-score   support
+**Classification Report:
+**              precision    recall  f1-score   support
 
            0       0.91      0.95      0.93       500
            1       0.93      0.89      0.91       300
@@ -107,8 +107,8 @@ Classification Report:
    macro avg       0.92      0.92      0.92       800
 weighted avg       0.92      0.92      0.92       800
 
-Future Work
-
+**Future Work
+**
 	•	Feature Engineering: Add transaction frequency or other behavior-based features.
 	•	Online Learning: Integrate real-time model updates for continuous fraud adaptation.
 	•	Deployment: Package the model as an API for real-time production deployment.
